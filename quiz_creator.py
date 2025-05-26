@@ -16,3 +16,4 @@ def convert_to_txt (question, choice_a, choice_b,choice_c, choice_d, correct_ans
         file.write(f" d.): {choice_d} \n")
         file.write(f" Correct Answer: {correct_answer} \n")
 #ask input questiom andnchoices and correct answer
+class QuizCreator(BoxLayout):
