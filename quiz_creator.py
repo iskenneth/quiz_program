@@ -19,3 +19,6 @@ def convert_to_txt (question, choice_a, choice_b,choice_c, choice_d, correct_ans
 class QuizCreator(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(orientation='vertical', **kwargs)  #arranging buttons vertically
+        
+        self.add_widget(Label(text="[b]Quiz Creator [/b]", markup =True, font_size = '56' ,size_hint_y=None, height=50))
+        
