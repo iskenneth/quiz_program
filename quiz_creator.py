@@ -48,4 +48,5 @@ class QuizCreator(BoxLayout):
         save_button.bind(on_press=self.save_question)
         self.add_widget(save_button)
         
-        
+        self.feedback = Label(text = "")
+        self.add_widget(self.feedback)
