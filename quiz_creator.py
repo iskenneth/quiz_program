@@ -50,3 +50,5 @@ class QuizCreator(BoxLayout):
         
         self.feedback = Label(text = "")
         self.add_widget(self.feedback)
+        
+        def save_question(self, instance):
