@@ -22,3 +22,5 @@ class QuizCreator(BoxLayout):
         
         self.add_widget(Label(text="[b]Quiz Creator [/b]", markup =True, font_size = '56' ,size_hint_y=None, height=50))
         
+        self.question_input = TextInput(hint_text="Enter your question", multiline=False)
+        self.add_widget(self.question_input)
