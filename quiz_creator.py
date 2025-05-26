@@ -24,3 +24,6 @@ class QuizCreator(BoxLayout):
         
         self.question_input = TextInput(hint_text="Enter your question", multiline=False)
         self.add_widget(self.question_input)
+        
+        self.choice_a_input = TextInput(hint_text="Enter answer for choice A", multiline=False)
+        self.add_widget(self.choice_a_input)
