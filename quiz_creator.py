@@ -72,3 +72,7 @@ class QuizCreator(BoxLayout):
         self.choice_c_input.text = ""
         self.choice_d_input.text = ""
         self.correct_answer_spinner.text = "Select a Correct answer"
+        
+class QuizApp(App):
+   
+      
