@@ -74,5 +74,6 @@ class QuizCreator(BoxLayout):
         self.correct_answer_spinner.text = "Select a Correct answer"
         
 class QuizApp(App):
-   
+   def build(self):
+      return QuizCreator()
       
