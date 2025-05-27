@@ -65,3 +65,10 @@ class QuizCreator(BoxLayout):
             
             convert_to_txt(question, choice_a, choice_b, choice_c, choice_d, correct_answer)
             self.feedback.text = "[SAVED] Question added successfully!"
+            
+            self.question_input.text = ""
+        self.choice_a_input.text = ""
+        self.choice_b_input.text = ""
+        self.choice_c_input.text = ""
+        self.choice_d_input.text = ""
+        self.correct_answer_spinner.text = "Select a Correct answer"
