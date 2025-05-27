@@ -1,4 +1,3 @@
-#import libraries
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
@@ -6,7 +5,6 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button 
 from kivy.uix.spinner import Spinner
 
-#convert input to txt 
 def convert_to_txt (question, choice_a, choice_b,choice_c, choice_d, correct_answer): 
     with open('quiz_data.txt' , 'a') as file:
         file.write(f" Question: {question} \n")
@@ -15,10 +13,10 @@ def convert_to_txt (question, choice_a, choice_b,choice_c, choice_d, correct_ans
         file.write(f" c.): {choice_c} \n")
         file.write(f" d.): {choice_d} \n")
         file.write(f" Correct Answer: {correct_answer} \n")
-#ask input questiom andnchoices and correct answer
+
 class QuizCreator(BoxLayout):
     def __init__(self, **kwargs):
-        super().__init__(orientation='vertical', **kwargs)  #arranging buttons vertically
+        super().__init__(orientation='vertical', **kwargs)  
         
         self.add_widget(Label(text="[b]Quiz Creator [/b]", markup =True, font_size = '56' ,size_hint_y=None, height=50))
         
@@ -51,13 +49,14 @@ class QuizCreator(BoxLayout):
         self.feedback = Label(text = "")
         self.add_widget(self.feedback)
         
-        def save_question(self, instance):
-            question = self.question_input.text
-            choice_a = self.choice_a_input.text
-            choice_b = self.choice_b_input.text
-            choice_c = self.choice_c_input.text
-            choice_d = self.choice_d_input.text
-            correct_answer = self.correct_answer_spinner.text
+    def save_question(self, instance):
+        question = self.question_input.text
+        choice_a = self.choice_a_input.text
+        choice_b = self.choice_b_input.text
+        choice_c = self.choice_c_input.text
+        choice_d = self.choice_d_input.text
+        correct_answer = self.correct_answer_spinner.text
+            
         
         if correct_answer not in ('a', 'b', 'c', 'd'):
             self.feedback.text = "[ERROR 404!!] Select a valid correct answer."
