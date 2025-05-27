@@ -64,3 +64,4 @@ class QuizCreator(BoxLayout):
             return
             
             convert_to_txt(question, choice_a, choice_b, choice_c, choice_d, correct_answer)
+            self.feedback.text = "[SAVED] Question added successfully!"
