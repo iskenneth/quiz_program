@@ -77,3 +77,6 @@ class QuizApp(App):
    def build(self):
       return QuizCreator()
       
+if __name__ == "__main__":
+    QuizApp().run()                     
+      
