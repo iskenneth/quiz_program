@@ -45,7 +45,8 @@ def take_quiz(question):
             choice_list = list(tanong.choices.items())
             random.shuffle(choice_list)
             
-            
+            label_map = {}
+            display_labels = ['a', 'b', 'c','d']
         
                 
         
