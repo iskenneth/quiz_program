@@ -35,6 +35,9 @@ def load_question_from_file(filename):
         question.append(tanong)
     random.shuffle(question)
     return question
+    
+def take_quiz(question):
+        score = 0    
         
             
                   
