@@ -61,7 +61,10 @@ def take_quiz(question):
                     score += 1
                 else:
                     print("Error!!")
-print(f"\n Your final score is: {score}/{len(question)}")                    
+print(f"\n Your final score is: {score}/{len(question)}")
+
+questions = load_question_from_file("quiz_data.txt")   
+take_quiz(questions)                                     
                                                             
             
                                             
