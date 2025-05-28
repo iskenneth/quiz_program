@@ -55,7 +55,12 @@ def take_quiz(question):
             user_input = input("What is your answer (a/b/c/d)").lower()
             
             if user_input in label_map:
-                
+                selected_label = label_map[user_input]
+                if selected_label == tanong.correct_answer:
+                    print ("Your answer is correct!!")
+                    score += 1
+                else:
+                    print("Error!!")                    
             
                                             
         
