@@ -60,7 +60,9 @@ def take_quiz(question):
                     print ("Your answer is correct!!")
                     score += 1
                 else:
-                    print("Error!!")                    
+                    print("Error!!")
+print(f"\n Your final score is: {score}/{len(question)}")                    
+                                                            
             
                                             
         
