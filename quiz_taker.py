@@ -47,6 +47,16 @@ def take_quiz(question):
             
             label_map = {}
             display_labels = ['a', 'b', 'c','d']
+            
+            for i, (original_label, choice_text) in enumerate(choice_list):
+                label_map[display_labels [i]] = original_label
+                print(f" {display_labels[i]}.) {choice_text}")
+                
+            user_input = input("What is your answer (a/b/c/d)").lower()
+            
+            
+            
+                                            
         
                 
         
