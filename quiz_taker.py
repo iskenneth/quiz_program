@@ -37,7 +37,17 @@ def load_question_from_file(filename):
     return question
     
 def take_quiz(question):
-        score = 0    
+        score = 0
+        
+        for tanong in question:
+            print("\n" + tanong.text_question)
+            
+            choice_list = list(tanong.choices.items())
+            random.shuffle(choice_list)
+            
+            
+        
+                
         
             
                   
