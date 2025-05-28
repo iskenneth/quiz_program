@@ -31,5 +31,10 @@ def load_question_from_file(filename):
             'd': choice_d
         }
         
+        tanong = Question(question_text, choices, correct_answer)
+        question.append(tanong)
+    random.shuffle(question)
+    return question
+        
             
                   
