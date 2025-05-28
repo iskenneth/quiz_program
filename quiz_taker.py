@@ -11,3 +11,6 @@ class Question:
 #check if the answer is right
     def right_answer(self, answer):
         return self.correct_answer == answer
+
+def load_question_from_file(filename):
+                    
