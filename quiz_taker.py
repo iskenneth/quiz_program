@@ -9,3 +9,5 @@ class Question:
         self.choices = choices
         self.correct_answe = correct_answer
 #check if the answer is right
+    def right_answer(self, answer):
+        return self.correct_answer == answer
