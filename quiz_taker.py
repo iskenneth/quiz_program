@@ -16,4 +16,5 @@ def load_question_from_file(filename):
     question = []    
     with open ('quiz_data.txt', 'r') as file:
         lines = file.readlines()      
-              
+    for options in range (0,(len), 6):
+                  
