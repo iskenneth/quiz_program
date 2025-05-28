@@ -24,4 +24,12 @@ def load_question_from_file(filename):
         choice_d=lines[options + 4].strip().split(":")[1], strip()
         correct_answer = lines[options + 5].strip(). split(":")[1].strip()
         
+        choices = {
+            'a': choice_a,
+            'a': choice_a,
+            'a': choice_a,
+            'd': choice_d
+        }
+        
+            
                   
