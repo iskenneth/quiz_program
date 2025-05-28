@@ -54,7 +54,8 @@ def take_quiz(question):
                 
             user_input = input("What is your answer (a/b/c/d)").lower()
             
-            
+            if user_input in label_map:
+                
             
                                             
         
